@@ -1,0 +1,37 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const Cachorro_1 = __importDefault(require("./Cachorro"));
+const Gato_1 = __importDefault(require("./Gato"));
+const Ave_1 = __importDefault(require("./Ave"));
+const Veterinario_1 = __importDefault(require("./Veterinario"));
+const Recepcionista_1 = __importDefault(require("./Recepcionista"));
+let c1 = new Cachorro_1.default("Rex", 3, "Ana");
+let g1 = new Gato_1.default("Mingau", 2, "Laura");
+let a1 = new Ave_1.default("Louro", 5, "Lala");
+let v1 = new Veterinario_1.default("Dr. Ricardo", "vet1", 4500, 2);
+let r1 = new Recepcionista_1.default("Fernanda", "rec1", 2200, 3);
+console.log(c1);
+console.log("Faz:");
+c1.emitirSom();
+console.log("Cuidados:");
+c1.descreverCuidados();
+console.log(g1);
+console.log("Faz:");
+g1.emitirSom();
+console.log("Cuidados:");
+g1.descreverCuidados();
+console.log(a1);
+console.log("Faz:");
+a1.emitirSom();
+console.log("Cuidados:");
+a1.descreverCuidados();
+console.log(v1);
+console.log("Bônus");
+console.log(v1.calcularBonus());
+console.log(r1);
+console.log("Bônus");
+console.log(r1.calcularBonus());
+//# sourceMappingURL=index.js.map
